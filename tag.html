@@ -1,66 +1,272 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <title>All Tags</title>  
-</head>  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>All Tags</title>
+</head>
 <!-- <body>  
 1. Comments:
 With the help of this tag, we can add comments in the HTML. After commenting on the elements,
  the browser does not render it. Also, these comments parts are not displayed on the web page. 
  But these commented codes are available in the source code. -->
-<strong><!-- --></strong>  
+<strong><!-- --></strong>
 
 <!-- 2. Doctype:
 With the help of this tag, we can declare the version of the markup language to the web browser -->
-</body>  
+</body>
 
 <!-- 3. <a>:
 With the help of this tag, we can create a hyperlink to the web page.
  The hyperlink can be done with the help of another file in a different location. -->
-<a href="url">Link Text</a>  
+<a href="url">Link Text</a>
 
 <!-- 4. <abbr>:
 With the help of this tag, we can define the abbreviations or acronyms of longer words,
  such as www, HTML, HTTP, etc.
  -->
-<abbr title="expanded-text">abbreviation</abbr>  
+<abbr title="expanded-text">abbreviation</abbr>
 
 <!-- 5. <address>:
 With the help of this tag, we can find the address or the contact details of the web page's
 author. The <address> tag contains addresses, cellphone numbers, emails, website connections, etc.
  -->
-<address>  
-Contact Information Goes Here  
-</address>  
+<address>
+    Contact Information Goes Here
+</address>
 
 <!-- 6. <area>:
 With the help of this tag, we can identify the clickable area associated with the hyperlink. -->
-<area shape="shape-type" coords="coordinates" href="destination-url" alt="alternative-text">  
+<area shape="shape-type" coords="coordinates" href="destination-url" alt="alternative-text">
 
 <!-- 7. <article>:
 With the help of this tag, we can represent a piece of content that is used to be distributed 
 to other websites without being a part of this. With the help of <article> tag, we can display
 entire blog posts, news articles, or similar content, etc. -->
-<article>  
-<!-- Content goes here -->  
- <p>it will come</p>
-</article> 
+<article>
+    <!-- Content goes here -->
+    <p>it will come</p>
+</article>
 
 <!-- 8. <audio>:
 With the help of this tag, we can embed the audio file into the webpage.
  To do this, there is no need for additional plug-ins like Flash. -->
- <audio src="audio-file.mp3" controls>  
-Your browser does not support the audio element.  
-</audio>  
+<audio src="audio-file.mp3" controls>
+    Your browser does not support the audio element.
+</audio>
 
 <!-- 9. <aside>:
 With the help of this tag, we can define the content related to the web page's 
 main content, but they are not constituted to the web page. -->
-<aside>  
-<!-- Content goes here -->  
- <p>
-Aside
- </p>
-</aside>  
+<aside>
+    <!-- Content goes here -->
+    <p>
+        Aside
+    </p>
+</aside>
 
-</html>  
+<!-- 10. <b>:
+With the help of this tag, we can make the text bold without any additional significance. -->
+<b>This text is bold.</b>
+
+<!-- 11. <base>:
+With the help of this tag, we can create the target address, which is targeted by all the URLs
+ present in the document. -->
+<base href="https://www.google.com/" target="abc">
+
+
+<!-- 12. <bdi>:
+With the help of this tag, we can tell the browser to isolate the text that comes from other
+destinations with the help of a bidirectional algorithm. -->
+<bdi>Text with different directionality</bdi>
+
+<!-- 13. <blockquote>:
+With the help of this tag, we can define a long quotation from another source. -->
+<blockquote cite="source-url">
+    <p>This is a long quotation.</p>
+</blockquote>
+
+<!-- 16. <br>:
+With the help of this tag, we can produce a line break on the web page. We can use this 
+tag basically during the writing of poems or addresses that require line breaks. -->
+<br>
+
+
+<!-- 17. <button>:
+With the help of this tag, we can create a clickable button on the web page. We can use
+the button tag in forms or anywhere in a document. -->
+<button type="button" onclick="alert('Button clicked!')">
+    Click Me
+</button>
+
+<!-- 18. <canvas>:
+With the help of this tag, we can define a particular 
+region used for drawing graphics through scripting (usually JavaScript). -->
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #9c2525;">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<!-- 19. <caption>:
+With the help of this tag, we can create the table caption, which is
+used to create the title for the table. -->
+<table>
+    <caption>Caption Text</caption>
+    <!-- Table content goes here -->
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+</table>
+
+<!-- 20. <cite>:
+With the help of this tag, we can do some creative work and give a title for that creative work. -->
+<cite>Title of a Work</cite>
+
+
+<!-- 21. <code>:
+With the help of this tag, we can insert a particular code fragment, which might be HTML or CSS code. -->
+<code>
+    &lt;html&gt;
+    &lt;head&gt;&lt;/head&gt;
+    &lt;body&gt;&lt;/body&gt;
+    &lt;/html&gt;
+</code>
+
+<!-- 22. <col>:
+With the help of this tag, we can specify all the column's properties.
+ We can specify it inside the <colgroup> element. -->
+<col span="2" style="background-color:yellow">
+
+<!-- 23. <colgroup>:
+With the help of this tag, we can specify one or more columns in a group.
+ With the help of this, we can apply the style to the entire column without
+repeating the style for every column and every row. -->
+<colgroup>
+    <col span="2" style="background-color:yellow">
+</colgroup>
+
+<!-- 24. <data>:
+With the help of this tag, we can add machine-readable translation.
+The processor generates it, and the browser can generate the human-readable value. -->
+<br>
+<data value="12345">Machine-readable value</data>
+<br>
+<data value="13/12/2035">13 Decmber</data>
+
+
+<!-- 25. <datalist>:
+With the help of this tag, we can provide an auto-complete feature to the form element.
+ With the help of this, the user can select the option from the option list. -->
+<datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Safari">
+    <option value="Edge">
+    <option value="Opera">
+</datalist>
+
+<!-- 26. <dd>:
+With the help of this tag, we can define the definition description in the HTML.
+ It is also used to describe an item in the list of descriptions. -->
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl>
+
+<!-- 27. <del>:
+With the help of this tag, we can declare the particular section that will be deleted 
+from the document. After doing this, the web browser strike over that particular section 
+in the webpage. -->
+
+
+<del> This text is deleted. </del>
+
+<!-- 28. <details>:
+With the help of this tag, we can create a toggle. This toggle contains all the information 
+but is in a closed state. When we mouse hover over it, it comes to an open state and displays
+ all the hidden information. -->
+<details>
+    <summary>More Info</summary>
+    <p>This is the additional information that is hidden by default.</p>
+</details>
+
+<!-- 29. <dfn>:
+With the help of this tag, we can represent the definition element.
+ With the help of the definition element, we can define the instances
+  of the definition. When a term first appears in the document, it is
+   known as the instances of the definition. -->
+
+<dfn>Definition Term</dfn>
+
+<!-- 30. <dialog>:
+With the help of this tag, we can define a dialogue box and the other webpage components. 
+With the help of this component, the webpage can interact with the user beautifully. -->
+<dialog open>
+    <p>This is a dialog box.</p>
+    <button onclick="this.parentElement.close()">Close</button>
+</dialog>
+
+
+
+<!-- 31. <div>:
+With the help of this tag, we can create a generic container that can hold
+the flow of the content. It also does not have the default rendering. -->
+<div>
+    <p>This is a division element.</p>
+    <br>
+    <p>It is used to group other elements together.</p>
+</div>
+
+<!-- 32. <dl>:
+With the help of this tag, we can define the list of items on the web page.
+We can also represent the metadata with the help of this tag. -->
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl>
+
+<!-- 33. <dt>:
+With the help of this tag, we can define the definition list on the web page.
+ we have to write the <dt> tag within the <dl> tag. We can also flow this element
+     with the help of <dd> tag. -->
+<dt>HTML</dt>
+<dd>HyperText Markup Language</dd>
+<dt>CSS</dt>
+<dd>Cascading Style Sheets</dd>
+
+
+<!-- 34. <em>:
+With the help of this tag, we can emphasize a particular word or phrase within a sentence.
+It converts the normal word or sentence into italic and semantic styles. -->
+<em>This text is emphasized.</em>
+
+<!-- 35. <embed>:
+With the help of this tag, we can embed external things such as audio or video into the webpage. -->
+<embed src="file.pdf" type="application/pdf" width="600" height="400">
+
+
+<!-- 36. <fieldset>:
+With the help of this tag, we can create a group of related elements inside a form. Also,
+ with the help of this, we can create a box around the element. -->
+<fieldset>
+    <legend>Personal Information</legend>
+    Name: <input type="text" name="name"><br>
+    <br>
+    Email: <input type="email" name="email">
+</fieldset>
+
+<!-- 37. <figcaption>:
+With the help of this tag, we can attach the caption for the image, table, 
+or chart contained within the <figure> element. -->
+<figure>
+    <img src="image.jpg" alt="Description of image">
+    <figcaption>This is the caption for the image.</figcaption>
+</figure>
+
+</body>
+
+</html>
