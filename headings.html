@@ -2,47 +2,90 @@
 <html>
 
 <head>
-    <title>Heading elements</title>
+    <title>Headings Inside Div</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bbaeae;
+            margin: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+        }
+
+        .content-box {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Verdana;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: red;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: green;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: blue;
+        }
+
+        blockquote {
+            font-style: italic;
+            margin: 10px 0;
+            padding-left: 15px;
+            border-left: 4px solid #ccc;
+        }
+    </style>
 </head>
-<style>
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: Verdana;
-        font-size:large ;
-    }
-
-    h1 {
-        font-size: 32px;
-        color: red;
-    }
-
-    h2 {
-        font-size: 30px;
-        color: green;
-    }
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        line-height: 1.6;
-        background-color: #cf6464;
-    }
-</style>
 
 <body>
-    <h1>This is the main heading of the page</h1>
-    <p><code>h1</code> is the most important heading, often used to highlight the page's main keyword.</p>
 
-    <h2>This is the first subheading</h2>
-    <p><code>h2</code> divides content into major sections.</p>
+    <div class="content-box">
 
-    <h3>This is a second-level subheading</h3>
-    <p><code>h3</code> is used for subsections under <code>h2</code>.</p>
+        <h1>Wisdom Through Words</h1>
+        <p>
+            Headings help readers understand what a section is about before they even read the text.
+        </p>
 
-    <p>Use <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags as needed to reflect your content structure.</p>
+        <blockquote>
+            "The art of communication is the language of leadership." – James Humes
+        </blockquote>
+
+        <h2>Why Structure Matters</h2>
+        <p>
+            Using proper headings makes content easier to scan, read, and understand.
+        </p>
+
+        <blockquote>
+            "Good order is the foundation of all things." – Edmund Burke
+        </blockquote>
+
+        <h3>Small Sections, Big Impact</h3>
+        <p>
+            Subheadings break complex ideas into smaller, digestible parts.
+        </p>
+
+        <blockquote>
+            "Simplicity is the ultimate sophistication." – Leonardo da Vinci
+        </blockquote>
+
+    </div>
+
 </body>
 
 </html>

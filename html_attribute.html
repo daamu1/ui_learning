@@ -4,47 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Attributes Examples</title>
+    <title>HTML Attributes – Real Use Cases</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- id attribute -->
-    <h1 id="main-heading">Welcome</h1>
-    <br>
-    <br>
-    <!-- class attribute -->
-    <p class="intro-text">This is a paragraph.</p>
-    <br>
-    <br>
-    <!-- href attribute -->
-    <a href="https://example.com">Click here</a>
-    <br>
-    <br>
-    <!-- src attribute -->
-    <img src="image.jpg" alt="Description">
-    <br>
-    <br>
-    <!-- style attribute -->
-    <div style="color: blue; background-color: yellow;">Styled div</div>
-    <br>
-    <br>
-    <!-- data-* attribute -->
-    <button data-id="123" data-action="submit">Submit</button>
-    <br>
-    <br>
-    <!-- disabled attribute -->
-    <input type="text" disabled>
-    <br>
-    <!-- placeholder attribute -->
-    <input type="text" placeholder="Enter name">
-    <br>
-    <br>
-    <!-- required attribute -->
-    <input type="email" required>
-    <br>
-    <br>
-    <!-- title attribute -->
-    <p title="This is a tooltip">Hover over me</p>
+
+    <!-- id attribute: Used for unique identification -->
+    <h1 id="main-heading">Believe in Your Potential</h1>
+
+    <div class="card">
+
+        <!-- class attribute: Used for styling and grouping -->
+        <p class="highlight">
+            Every great developer once started with a single line of code.
+        </p>
+
+        <!-- href attribute: Used for navigation -->
+        <p>
+            Learn something new every day.
+            <a href="https://developer.mozilla.org" target="_blank">
+                Start learning here
+            </a>
+        </p>
+
+        <!-- src and alt attributes: Used for images and accessibility -->
+        <img src="image.jpg" alt="A person climbing towards success" width="300">
+
+    </div>
+
+    <div class="card">
+
+        <!-- style attribute: Quick inline styling -->
+        <div style="color: white; background-color: #27ae60; padding: 10px;">
+            “Success is built one small effort at a time.”
+        </div>
+
+        <br>
+
+        <!-- data-* attributes: Used to store custom data -->
+        <button data-goal="consistency" data-level="beginner">
+            Stay Consistent
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <!-- disabled attribute: Used when action is not allowed -->
+        <input type="text" disabled value="Fear is temporary">
+
+        <br><br>
+
+        <!-- placeholder attribute: Gives user guidance -->
+        <input type="text" placeholder="Write your next goal">
+
+        <br><br>
+
+        <!-- required attribute: Ensures important input -->
+        <input type="email" required placeholder="Enter your email to commit">
+
+    </div>
+
+    <div class="card">
+
+        <!-- title attribute: Tooltip for extra info -->
+        <p title="Keep showing up, even on hard days">
+            Hover here for a reminder 💡
+        </p>
+
+    </div>
+
 </body>
 
 </html>
