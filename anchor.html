@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Anchor Tag – Complete Demo</title>
+
+    <style>
+        body {
+            background: #f2efe9;
+            font-family: "Georgia", serif;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        .box {
+            background-color: #ccbaba;
+            padding: 25px;
+            border-left: 6px solid #007bff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #007bff;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        footer {
+            margin-top: 40px;
+            border-top: 2px solid #ccc;
+            padding-top: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Anchor Tag – One Page Complete Guide</h1>
+    <p>The anchor tag connects content, pages, and people. This page shows its real power.</p>
+
+    <!-- External Link -->
+    <div class="box">
+        <h3>External Website Link</h3>
+        <a href="https://developer.mozilla.org" target="_blank">
+            Learn HTML from MDN
+        </a>
+    </div>
+
+    <!-- Internal Link -->
+    <div class="box">
+        <h3>Internal Page Link</h3>
+        <a href="headings.html">
+            Go to About Page
+        </a>
+    </div>
+
+    <!-- Bookmark Link -->
+    <div class="box">
+        <h3>Same Page Navigation (Bookmark)</h3>
+        <a href="#contact">Jump to Contact Section</a>
+    </div>
+
+    <!-- Email Link -->
+    <div class="box">
+        <h3>Email Link</h3>
+        <a href="mailto:saurabhmaithani01921@gmail.com">
+            Send an Email
+        </a>
+    </div>
+
+    <!-- Phone Link -->
+    <div class="box">
+        <h3>Phone Call Link</h3>
+        <a href="tel:+919411327611">
+            Call Now
+        </a>
+    </div>
+
+    <!-- Download Link -->
+    <div class="box">
+        <h3>Download File</h3>
+        <a href="resume.pdf" download>
+            Download Resume
+        </a>
+    </div>
+
+    <!-- Image Link -->
+    <div class="box">
+        <h3>Image Link</h3>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLat8bZvhXD3ChSXyzGsFVh6qgplm1KhYPKA&s"
+            target="_blank">
+            View Image
+        </a>
+    </div>
+
+    <!-- Tooltip -->
+    <div class="box">
+        <h3>Link with Tooltip</h3>
+        <a href="https://google.com" title="This link takes you to google.com">
+            Hover to See Tooltip
+        </a>
+    </div>
+
+    <!-- Styled as Button -->
+    <div class="box">
+        <h3>Anchor Styled as Button</h3>
+        <a href="html_attribute.html" class="btn">
+            Get Started
+        </a>
+    </div>
+
+    <!-- Placeholder Link -->
+    <div class="box">
+        <h3>Placeholder Link</h3>
+        <a href="#">
+            Coming Soon
+        </a>
+    </div>
+
+    <!-- JavaScript Link -->
+    <div class="box">
+        <h3>Anchor with JavaScript</h3>
+        <a href="javascript:void(0)" onclick="alert('Stay consistent and keep learning!')">
+            Click for Motivation
+        </a>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="box" id="contact">
+        <h3>Contact Section (Bookmark Target)</h3>
+        <p>
+            You reached here using an anchor link.
+            This is how single-page navigation works.
+        </p>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2025 HTML Anchor Tag Demo
+            Built with fundamentals. Powered by consistency.
+        </p>
+    </footer>
+
+</body>
+
+</html>
