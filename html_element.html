@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Guide</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        .element { margin: 20px 0; padding: 15px; border-left: 4px solid #007bff; background: #f8f9fa; }
+        code { background: #e9ecef; padding: 2px 6px; border-radius: 3px; }
+        h1 { color: #333; }
+        h3 { color: #007bff; }
+    </style>
+</head>
+<body>
+    <h1>Complete HTML Elements Guide</h1>
+
+    <!-- Text Elements -->
+    <div class="element">
+        <h3>&lt;h1&gt; to &lt;h6&gt; - Headings</h3>
+        <p>Define headings from largest (h1) to smallest (h6). Important for structure and SEO.</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+    </div>
+
+    <div class="element">
+        <h3>&lt;p&gt; - Paragraph</h3>
+        <p>Represents a block of text. Always creates space above and below.</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;a&gt; - Anchor (Link)</h3>
+        <p>Creates hyperlinks. Use <code>href</code> attribute for URL.</p>
+        <a href="https://www.example.com">Visit Example</a>
+    </div>
+
+    <div class="element">
+        <h3>&lt;strong&gt; - Strong Importance</h3>
+        <p>Text with <strong>strong importance</strong> - renders bold with semantic meaning.</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;em&gt; - Emphasis</h3>
+        <p>Text with <em>emphasis</em> - renders italic with semantic meaning.</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;br&gt; - Line Break</h3>
+        <p>Creates a line break.<br>This appears on a new line.</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;hr&gt; - Horizontal Rule</h3>
+        <p>Represents a thematic break or horizontal line.</p>
+        <hr>
+    </div>
+
+    <!-- Lists -->
+    <div class="element">
+        <h3>&lt;ul&gt; - Unordered List</h3>
+        <p>Creates bulleted list with &lt;li&gt; items.</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div class="element">
+        <h3>&lt;ol&gt; - Ordered List</h3>
+        <p>Creates numbered list with &lt;li&gt; items.</p>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+    </div>
+
+    <div class="element">
+        <h3>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; - Definition List</h3>
+        <p>Defines terms and their descriptions.</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+        </dl>
+    </div>
+
+    <!-- Images & Media -->
+    <div class="element">
+        <h3>&lt;img&gt; - Image</h3>
+        <p>Embeds images. Use <code>src</code> for path and <code>alt</code> for description.</p>
+        <img src="https://via.placeholder.com/150" alt="Placeholder image">
+    </div>
+
+    <div class="element">
+        <h3>&lt;video&gt; - Video</h3>
+        <p>Embeds video content with playback controls.</p>
+        <video width="200" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="element">
+        <h3>&lt;audio&gt; - Audio</h3>
+        <p>Embeds audio content with playback controls.</p>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <!-- Forms -->
+    <div class="element">
+        <h3>&lt;form&gt; - Form</h3>
+        <p>Container for input controls. Use <code>action</code> and <code>method</code> attributes.</p>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="element">
+        <h3>&lt;input&gt; - Input Field</h3>
+        <p>Single-line text input. Use <code>type</code> attribute for variations: text, email, password, checkbox, radio, etc.</p>
+        <input type="email" placeholder="Enter email">
+        <input type="checkbox"> Agree
+        <input type="radio" name="option"> Option 1
+    </div>
+
+    <div class="element">
+        <h3>&lt;textarea&gt; - Textarea</h3>
+        <p>Multi-line text input for longer content.</p>
+        <textarea rows="4" cols="50">Enter your message here...</textarea>
+    </div>
+
+    <div class="element">
+        <h3>&lt;select&gt; &amp; &lt;option&gt; - Dropdown</h3>
+        <p>Creates dropdown selection list.</p>
+        <select>
+            <option>Choose an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+        </select>
+    </div>
+
+    <div class="element">
+        <h3>&lt;label&gt; - Label</h3>
+        <p>Associates text with form controls using <code>for</code> attribute.</p>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+    </div>
+
+    <!-- Tables -->
+    <div class="element">
+        <h3>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt; - Table</h3>
+        <p>Creates tabular data. &lt;th&gt; for headers, &lt;td&gt; for data cells.</p>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Semantic Elements -->
+    <div class="element">
+        <h3>&lt;header&gt; - Header</h3>
+        <p>Represents header section of page or section.</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;nav&gt; - Navigation</h3>
+        <p>Contains navigation links.</p>
+        <nav>
+            <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <div class="element">
+        <h3>&lt;main&gt; - Main Content</h3>
+        <p>Specifies main content of the document.</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;section&gt; - Section</h3>
+        <p>Groups related content together semantically.</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;article&gt; - Article</h3>
+        <p>Independent content (blog post, news, etc.).</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;aside&gt; - Aside</h3>
+        <p>Sidebar or supplementary content.</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;footer&gt; - Footer</h3>
+        <p>Footer section of page or section.</p>
+    </div>
+
+    <!-- Other Useful Elements -->
+    <div class="element">
+        <h3>&lt;div&gt; - Division</h3>
+        <p>Generic container for grouping content. Non-semantic.</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;span&gt; - Span</h3>
+        <p>Inline container for styling text. Non-semantic.</p>
+        <p>This is <span style="color: red;">red text</span> inline.</p>
+    </div>
+
+    <div class="element">
+        <h3>&lt;blockquote&gt; - Blockquote</h3>
+        <p>Represents quoted section.</p>
+        <blockquote>
+            "This is a famous quote."
+        </blockquote>
+    </div>
+
+    <div class="element">
+        <h3>&lt;code&gt; - Code</h3>
+        <p>Displays inline code: <code>const x = 10;</code></p>
+    </div>
+
+    <footer style="margin-top: 40px; border-top: 2px solid #ccc; padding-top: 20px;">
+        <p>&copy; 2024 HTML Elements Guide - Best practices for web development.</p>
+    </footer>
+</body>
+</html>
