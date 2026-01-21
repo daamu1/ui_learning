@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image Tag – Complete Demonstration</title>
+
+    <style>
+        body {
+             background: #ecc67a;
+            font-family: "Georgia", serif;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        .section {
+            background: #8564aa;
+            margin-bottom: 30px;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            text-align: center;
+        }
+
+        img {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML &lt;img&gt; Tag – Complete Usage Page</h1>
+    <p>Images enhance understanding, engagement, and user experience on the web.</p>
+
+    <!-- Basic Image -->
+    <div class="section">
+        <h3>1. Basic Image (src + alt)</h3>
+        <img src="images/sample.jpg" alt="Sample image showing basic usage">
+    </div>
+
+    <!-- Image from Folder -->
+    <div class="section">
+        <h3>2. Image from Images Folder</h3>
+        <img src="images/good_morning.jpg" alt="Good Morning Friends">
+    </div>
+
+    <!-- Absolute Path Image -->
+    <div class="section">
+        <h3>3. Absolute Path Image</h3>
+        <img src="https://via.placeholder.com/300x180" alt="Absolute path image">
+    </div>
+
+    <!-- Width and Height -->
+    <div class="section">
+        <h3>4. Image with Width and Height</h3>
+        <img src="https://via.placeholder.com/300x180" width="300" height="180" alt="Sized image">
+    </div>
+
+    <!-- Image Styled with CSS -->
+    <div class="section">
+        <h3>5. Image Styled Using CSS</h3>
+        <img src="https://via.placeholder.com/300" alt="Styled image"
+             style="width:200px; height:200px;">
+    </div>
+
+    <!-- Title Attribute -->
+    <div class="section">
+        <h3>6. Image with Title (Tooltip)</h3>
+        <img src="https://via.placeholder.com/150" alt="Tooltip image"
+             title="This is a tooltip on image">
+    </div>
+
+    <!-- Border -->
+    <div class="section">
+        <h3>7. Image with Border (CSS)</h3>
+        <img src="https://via.placeholder.com/150" alt="Bordered image"
+             style="border:3px solid black;">
+    </div>
+
+    <!-- Align (Deprecated) -->
+    <div class="section">
+        <h3>8. Image Align (Deprecated)</h3>
+        <img src="https://via.placeholder.com/100" alt="Aligned image" align="right">
+        <p>This text wraps beside the image using deprecated align attribute.</p>
+    </div>
+
+    <!-- Float Image -->
+    <div class="section">
+        <h3>9. Floating Image using CSS</h3>
+        <p>
+            <img src="https://via.placeholder.com/80" alt="Floating image"
+                 style="float:right; margin-left:10px;">
+            Floating images allow text to wrap naturally around visuals.
+        </p>
+    </div>
+
+    <!-- hspace and vspace -->
+    <div class="section">
+        <h3>10. Image Spacing (Deprecated hspace & vspace)</h3>
+        <img src="https://via.placeholder.com/120" alt="Spaced image"
+             hspace="20" vspace="20">
+    </div>
+
+    <!-- Modern Spacing -->
+    <div class="section">
+        <h3>11. Image Spacing using CSS Margin</h3>
+        <img src="https://via.placeholder.com/120" alt="Modern spacing image"
+             style="margin:30px 20px;">
+    </div>
+
+    <!-- Image as Link -->
+    <div class="section">
+        <h3>12. Image as a Link</h3>
+        <a href="https://www.example.com" target="_blank">
+            <img src="https://via.placeholder.com/100" alt="Clickable image">
+        </a>
+    </div>
+
+    <!-- Animated GIF -->
+    <div class="section">
+        <h3>13. Animated Image (GIF)</h3>
+        <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif"
+             alt="Animated GIF" width="150">
+    </div>
+
+    <!-- Responsive Image -->
+    <div class="section">
+        <h3>14. Responsive Image (srcset & sizes)</h3>
+        <img
+            src="https://via.placeholder.com/320"
+            srcset="
+                https://via.placeholder.com/1024 1024w,
+                https://via.placeholder.com/640 640w,
+                https://via.placeholder.com/320 320w"
+            sizes="(max-width: 640px) 100vw, 50vw"
+            alt="Responsive image example">
+    </div>
+
+    <!-- Lazy Loading -->
+    <div class="section">
+        <h3>15. Image Loading Control (Lazy)</h3>
+        <img src="https://via.placeholder.com/400"
+             alt="Lazy loaded image"
+             loading="lazy">
+    </div>
+
+    <!-- Image Formats -->
+    <div class="section">
+        <h3>16. Common Image Formats</h3>
+        <ul>
+            <li>JPEG (.jpg, .jpeg) – Photographs</li>
+            <li>PNG (.png) – Transparent images</li>
+            <li>GIF (.gif) – Animated images</li>
+            <li>SVG (.svg) – Scalable vector graphics</li>
+            <li>ICO (.ico) – Icons and favicons</li>
+            <li>APNG (.apng) – Animated PNG</li>
+        </ul>
+    </div>
+
+    <footer style="margin-top:40px; border-top:2px solid #ccc; padding-top:15px;">
+        <p>
+            &copy; 2025 HTML Image Tag Demo  
+            Learn fundamentals. Build correctly. Scale confidently.
+        </p>
+    </footer>
+
+</body>
+</html>
